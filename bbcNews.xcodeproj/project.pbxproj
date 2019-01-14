@@ -112,6 +112,10 @@
 		03FC7A5D21ECF2E000571910 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FC7A5B21ECF2E000571910 /* Image.swift */; };
 		03FC7A5F21ECF2FB00571910 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FC7A5E21ECF2FB00571910 /* Channel.swift */; };
 		03FC7A6021ECF2FB00571910 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FC7A5E21ECF2FB00571910 /* Channel.swift */; };
+		03FC7A6A21ED04C900571910 /* BaseNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FC7A6321ED04C900571910 /* BaseNavigationBar.swift */; };
+		03FC7A6B21ED04C900571910 /* BaseNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FC7A6321ED04C900571910 /* BaseNavigationBar.swift */; };
+		03FC7A7021ED04C900571910 /* BaseNavigationBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03FC7A6621ED04C900571910 /* BaseNavigationBar.xib */; };
+		03FC7A7121ED04C900571910 /* BaseNavigationBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03FC7A6621ED04C900571910 /* BaseNavigationBar.xib */; };
 		F87AEDF018C7D73E2220E78D /* Pods_bbcNewsLOC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 398E40649059B501B590DCA5 /* Pods_bbcNewsLOC.framework */; };
 /* End PBXBuildFile section */
 
@@ -170,6 +174,8 @@
 		03FC7A5521ECF2AB00571910 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		03FC7A5B21ECF2E000571910 /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		03FC7A5E21ECF2FB00571910 /* Channel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
+		03FC7A6321ED04C900571910 /* BaseNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationBar.swift; sourceTree = "<group>"; };
+		03FC7A6621ED04C900571910 /* BaseNavigationBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaseNavigationBar.xib; sourceTree = "<group>"; };
 		398E40649059B501B590DCA5 /* Pods_bbcNewsLOC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_bbcNewsLOC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		99596529534E8479B8F64D3A /* Pods-bbcNewsLOC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bbcNewsLOC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-bbcNewsLOC/Pods-bbcNewsLOC.debug.xcconfig"; sourceTree = "<group>"; };
 		D5CAC76EDF4B71CEAA2DEEF0 /* Pods-bbcNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bbcNews.debug.xcconfig"; path = "Pods/Target Support Files/Pods-bbcNews/Pods-bbcNews.debug.xcconfig"; sourceTree = "<group>"; };
@@ -355,6 +361,7 @@
 		03FC7A2D21EBC35000571910 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				03FC7A6121ED04C900571910 /* NavigationBar */,
 				03FC7A2E21EBC35000571910 /* Loader */,
 			);
 			path = Components;
@@ -383,6 +390,15 @@
 				03FC7A3721EBC7BB00571910 /* loader.json */,
 			);
 			path = Json;
+			sourceTree = "<group>";
+		};
+		03FC7A6121ED04C900571910 /* NavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				03FC7A6321ED04C900571910 /* BaseNavigationBar.swift */,
+				03FC7A6621ED04C900571910 /* BaseNavigationBar.xib */,
+			);
+			path = NavigationBar;
 			sourceTree = "<group>";
 		};
 		6230304FB096F4FF704BE8AA /* Pods */ = {
@@ -482,6 +498,7 @@
 			files = (
 				03FC79C321EBB3A900571910 /* bbcNews.plist in Resources */,
 				03FC796621EBB37500571910 /* Podfile in Resources */,
+				03FC7A7021ED04C900571910 /* BaseNavigationBar.xib in Resources */,
 				03FC79C721EBB3A900571910 /* bbcNewsLOC.plist in Resources */,
 				03FC799521EBB3A900571910 /* LaunchScreen.storyboard in Resources */,
 				03FC7A1821EBC0C600571910 /* HomeView_iPad.xib in Resources */,
@@ -498,6 +515,7 @@
 			files = (
 				03FC79C421EBB3A900571910 /* bbcNews.plist in Resources */,
 				03FC796721EBB37500571910 /* Podfile in Resources */,
+				03FC7A7121ED04C900571910 /* BaseNavigationBar.xib in Resources */,
 				03FC79C821EBB3A900571910 /* bbcNewsLOC.plist in Resources */,
 				03FC799621EBB3A900571910 /* LaunchScreen.storyboard in Resources */,
 				03FC7A1921EBC0C600571910 /* HomeView_iPad.xib in Resources */,
@@ -648,6 +666,7 @@
 				03FC7A2621EBC0C600571910 /* HomeRouter.swift in Sources */,
 				03FC79B921EBB3A900571910 /* BaseInteractor.swift in Sources */,
 				03FC79AB21EBB3A900571910 /* Double+Extension.swift in Sources */,
+				03FC7A6A21ED04C900571910 /* BaseNavigationBar.swift in Sources */,
 				03FC799D21EBB3A900571910 /* Int+Extension.swift in Sources */,
 				03FC79BF21EBB3A900571910 /* BaseRouter.swift in Sources */,
 				03FC799921EBB3A900571910 /* UIImageView+Extension.swift in Sources */,
@@ -696,6 +715,7 @@
 				03FC7A2721EBC0C600571910 /* HomeRouter.swift in Sources */,
 				03FC79BA21EBB3A900571910 /* BaseInteractor.swift in Sources */,
 				03FC79AC21EBB3A900571910 /* Double+Extension.swift in Sources */,
+				03FC7A6B21ED04C900571910 /* BaseNavigationBar.swift in Sources */,
 				03FC799E21EBB3A900571910 /* Int+Extension.swift in Sources */,
 				03FC79C021EBB3A900571910 /* BaseRouter.swift in Sources */,
 				03FC799A21EBB3A900571910 /* UIImageView+Extension.swift in Sources */,
