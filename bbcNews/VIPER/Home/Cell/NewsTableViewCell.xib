@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="120" id="KGk-i7-Jjw" customClass="NewsTableViewCell" customModule="bbcNews" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="121"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="120.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FJY-Ar-kKF" userLabel="container">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="120.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="genIcoClosePng" translatesAutoresizingMaskIntoConstraints="NO" id="I0e-JB-XuL">
+                                <rect key="frame" x="8" y="16" width="120" height="88.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="2KR-8i-J4q"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aiN-jt-ION">
+                                <rect key="frame" x="136" y="16" width="168" height="21.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Description Description Description Description Description Description Description Description Description Description " lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k6Z-3o-scw">
+                                <rect key="frame" x="136" y="40" width="168" height="49"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="date" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EUe-it-bUo">
+                                <rect key="frame" x="136" y="97" width="168" height="15.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="I0e-JB-XuL" secondAttribute="bottom" constant="16" id="6VM-Fx-OoG"/>
+                            <constraint firstItem="aiN-jt-ION" firstAttribute="leading" secondItem="I0e-JB-XuL" secondAttribute="trailing" constant="8" id="DaZ-EA-Qm2"/>
+                            <constraint firstAttribute="trailing" secondItem="aiN-jt-ION" secondAttribute="trailing" constant="16" id="IE5-gc-ziQ"/>
+                            <constraint firstItem="EUe-it-bUo" firstAttribute="trailing" secondItem="k6Z-3o-scw" secondAttribute="trailing" id="KLu-Kn-7ok"/>
+                            <constraint firstItem="k6Z-3o-scw" firstAttribute="trailing" secondItem="aiN-jt-ION" secondAttribute="trailing" id="MZc-SO-icg"/>
+                            <constraint firstItem="I0e-JB-XuL" firstAttribute="leading" secondItem="FJY-Ar-kKF" secondAttribute="leading" constant="8" id="XBk-tj-Y9o"/>
+                            <constraint firstItem="k6Z-3o-scw" firstAttribute="leading" secondItem="aiN-jt-ION" secondAttribute="leading" id="cOs-8Z-3Ih"/>
+                            <constraint firstItem="EUe-it-bUo" firstAttribute="top" relation="greaterThanOrEqual" secondItem="k6Z-3o-scw" secondAttribute="bottom" constant="8" id="fPi-au-dD6"/>
+                            <constraint firstItem="I0e-JB-XuL" firstAttribute="top" secondItem="FJY-Ar-kKF" secondAttribute="top" constant="16" id="gST-La-Onk"/>
+                            <constraint firstItem="k6Z-3o-scw" firstAttribute="top" secondItem="aiN-jt-ION" secondAttribute="bottom" constant="2.5" id="hah-ai-Wja"/>
+                            <constraint firstItem="aiN-jt-ION" firstAttribute="top" secondItem="I0e-JB-XuL" secondAttribute="top" id="hvz-Qq-7jf"/>
+                            <constraint firstItem="EUe-it-bUo" firstAttribute="leading" secondItem="k6Z-3o-scw" secondAttribute="leading" id="jBx-RJ-YyC"/>
+                            <constraint firstAttribute="bottom" secondItem="EUe-it-bUo" secondAttribute="bottom" constant="8" id="n2N-j8-ZOi"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="FJY-Ar-kKF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Ehl-x8-ay8"/>
+                    <constraint firstItem="FJY-Ar-kKF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="r0j-yk-krp"/>
+                    <constraint firstAttribute="bottom" secondItem="FJY-Ar-kKF" secondAttribute="bottom" id="xb0-Kk-Js4"/>
+                    <constraint firstAttribute="trailing" secondItem="FJY-Ar-kKF" secondAttribute="trailing" id="xhn-hm-v1z"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="newsDescription" destination="k6Z-3o-scw" id="FfI-gY-Ey1"/>
+                <outlet property="newsImage" destination="I0e-JB-XuL" id="XQk-6H-Bet"/>
+                <outlet property="publicationDate" destination="EUe-it-bUo" id="iww-Cg-C8d"/>
+                <outlet property="title" destination="aiN-jt-ION" id="vP5-VL-jyU"/>
+            </connections>
+            <point key="canvasLocation" x="137.59999999999999" y="166.8665667166417"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="genIcoClosePng" width="32" height="32"/>
+    </resources>
+</document>

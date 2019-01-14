@@ -46,5 +46,8 @@ final class HomePresenter: BasePresenter<HomeView, HomeRouterProtocol, HomeInter
         
         self.newsModel = newsModel
         
+        // Refrescamos la tabla con el contenido de noticias
+        self.view?.tableView.reloadData()
+        
     }
 }

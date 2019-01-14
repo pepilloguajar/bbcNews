@@ -13,6 +13,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeView">
             <connections>
                 <outlet property="navigationBar" destination="Q7X-V4-lgS" id="8Q4-Xb-fca"/>
+                <outlet property="tableView" destination="oSp-cf-0ob" id="7Jm-gf-cYy"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="x4H-ry-a8n"/>
             </connections>
         </placeholder>
@@ -28,12 +29,20 @@
                         <constraint firstAttribute="height" constant="60" id="jMi-AD-WyF"/>
                     </constraints>
                 </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="oSp-cf-0ob">
+                    <rect key="frame" x="0.0" y="104" width="375" height="708"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="oSp-cf-0ob" secondAttribute="trailing" id="0ic-iO-zkb"/>
                 <constraint firstItem="Q7X-V4-lgS" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="4uo-bJ-ghM"/>
+                <constraint firstAttribute="bottom" secondItem="oSp-cf-0ob" secondAttribute="bottom" id="60e-Vt-YXK"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Q7X-V4-lgS" secondAttribute="trailing" id="Hf4-cc-Z0h"/>
+                <constraint firstItem="oSp-cf-0ob" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="wUw-I0-ePw"/>
                 <constraint firstItem="Q7X-V4-lgS" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="zAL-my-6sm"/>
+                <constraint firstItem="oSp-cf-0ob" firstAttribute="top" secondItem="Q7X-V4-lgS" secondAttribute="bottom" id="zaS-x8-wda"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
         </view>

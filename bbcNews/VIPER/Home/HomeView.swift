@@ -9,10 +9,11 @@
 import Foundation
 import UIKit
 
-class HomeView: BaseView<HomePresenterProtocol> {
+class HomeView: BaseView<HomePresenterProtocol>, UITableViewDelegate, UITableViewDataSource {
     // MARK: IBOutlets declaration of all controls
     
     @IBOutlet weak var navigationBar: BaseNavigationBar!
+    @IBOutlet weak var tableView: UITableView!
     
     
     // MARK: Fileprivate Variables all variables must be for internal use, we should only have access to controls from the presenter
@@ -21,6 +22,10 @@ class HomeView: BaseView<HomePresenterProtocol> {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.customizeNavigationBar()
+        
+        self.tableView.delegate = self
+        self.tableView.dataSource = self
+        self.tableView.register(UINib(nibName: "NewsTableViewCell", bundle: nil), forCellReuseIdentifier: "NewsTableViewCell")
     }
     
     // MARK: IBActions declaration of all the controls
@@ -36,6 +41,28 @@ class HomeView: BaseView<HomePresenterProtocol> {
         
         self.navigationBar.delegate = self
         self.navigationBar.setWhiteStyle()
+    }
+    
+    // MARK: TABLEVIEW config
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.presenter?.newsModel.count ?? 0
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = self.tableView.dequeueReusableCell(withIdentifier: "NewsTableViewCell", for: indexPath) as? NewsTableViewCell ?? NewsTableViewCell()
+        
+        cell.configureCell(newsItem: self.presenter!.newsModel[indexPath.row])
+        
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 160
     }
 }
 

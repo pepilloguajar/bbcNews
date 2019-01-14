@@ -15,7 +15,7 @@ class Item {
     var description: String?
     var link: String?
     var guid: String?
-    var pubDate: String?
+    var pubDate: Date?
     var thumbnail: Thumbnail?
     init() {}
 
@@ -29,7 +29,8 @@ extension Item {
         self.description = itemEntity?.description
         self.link = itemEntity?.link
         self.guid = itemEntity?.guid
-        self.pubDate = itemEntity?.pubDate
+        // Paso la fecha a "Date" para trabajar con ella en el futuro
+        self.pubDate = itemEntity?.pubDate?.createDate(format: "E, dd MMM yyyy HH:mm:ss z")
         self.thumbnail = Thumbnail(thumbnailEntity: itemEntity?.thumbnail)
     }
 }
