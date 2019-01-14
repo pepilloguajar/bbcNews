@@ -1,0 +1,32 @@
+PODS:
+  - Alamofire (4.6.0)
+  - lottie-ios (2.5.0)
+  - XMLParsing (0.0.3)
+
+DEPENDENCIES:
+  - Alamofire (= 4.6.0)
+  - lottie-ios
+  - XMLParsing (from `https://github.com/ShawnMoore/XMLParsing.git`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - lottie-ios
+
+EXTERNAL SOURCES:
+  XMLParsing:
+    :git: https://github.com/ShawnMoore/XMLParsing.git
+
+CHECKOUT OPTIONS:
+  XMLParsing:
+    :commit: 594272e4df40798c53ae1735ee65f3f387291670
+    :git: https://github.com/ShawnMoore/XMLParsing.git
+
+SPEC CHECKSUMS:
+  Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
+  lottie-ios: d699fdee68d7b63e721d949388b015fef1aaa4ac
+  XMLParsing: 085edb6fa22c71d6b53a79299f990a91e7414d19
+
+PODFILE CHECKSUM: 3381d486fa9c84323ae08a0f4ffb853cc65cc90f
+
+COCOAPODS: 1.5.3

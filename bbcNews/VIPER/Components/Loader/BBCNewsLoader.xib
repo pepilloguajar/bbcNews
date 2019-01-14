@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BBCNewsLoader" customModule="bbcNews" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SIS-eP-XPE">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uu3-Kr-InW">
+                            <rect key="frame" x="147.5" y="293.5" width="80" height="80"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="80" id="G8f-a8-GKN"/>
+                                <constraint firstAttribute="height" constant="80" id="TCO-zm-lOf"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.71002782534246578" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="uu3-Kr-InW" firstAttribute="centerX" secondItem="SIS-eP-XPE" secondAttribute="centerX" id="iDd-La-vFQ"/>
+                        <constraint firstItem="uu3-Kr-InW" firstAttribute="centerY" secondItem="SIS-eP-XPE" secondAttribute="centerY" id="mL5-LL-oYY"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="SIS-eP-XPE" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="7g7-yP-gDO"/>
+                <constraint firstItem="SIS-eP-XPE" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="GiN-jz-zvq"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="SIS-eP-XPE" secondAttribute="trailing" id="Umr-eZ-6zo"/>
+                <constraint firstAttribute="bottom" secondItem="SIS-eP-XPE" secondAttribute="bottom" id="v08-eS-fjq"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="loaderView" destination="uu3-Kr-InW" id="5AV-eb-oEI"/>
+            </connections>
+        </view>
+    </objects>
+</document>
