@@ -15,11 +15,19 @@ class NewsTableViewCell: UITableViewCell {
     @IBOutlet weak var newsDescription: UILabel!
     @IBOutlet weak var publicationDate: UILabel!
     
+    @IBOutlet weak var constraintImageWidth: NSLayoutConstraint!
     var cellModel: Item?
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        if bbcNewsUtils.isIpad() {
+            self.title.font = self.title.font.withSize(26)
+            self.newsDescription.font = self.newsDescription.font.withSize(18)
+            self.publicationDate.font = self.publicationDate.font.withSize(16)
+            self.constraintImageWidth.constant = 240
+            self.layoutIfNeeded()
+        }
     }
 
     func configureCell(newsItem: Item) {

@@ -19,4 +19,8 @@ class bbcNewsUtils {
             return ""
         }
     }
+    
+    static func isIpad() -> Bool {
+        return UIDevice.current.userInterfaceIdiom == .pad
+    }
 }

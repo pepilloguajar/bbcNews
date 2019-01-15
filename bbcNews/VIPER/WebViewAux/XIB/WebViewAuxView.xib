@@ -23,15 +23,15 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6xn-cG-lpF" customClass="BaseNavigationBar" customModule="bbcNews" customModuleProvider="target">
-                    <rect key="frame" x="0.0" y="44" width="375" height="60"/>
+                    <rect key="frame" x="0.0" y="44" width="375" height="64"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="60" id="zJG-16-evf"/>
+                        <constraint firstAttribute="height" constant="64" id="zJG-16-evf"/>
                     </constraints>
                     <viewLayoutGuide key="safeArea" id="XBZ-MF-xMc"/>
                 </view>
                 <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="urz-PF-erm">
-                    <rect key="frame" x="0.0" y="104" width="375" height="708"/>
+                    <rect key="frame" x="0.0" y="108" width="375" height="704"/>
                     <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <wkWebViewConfiguration key="configuration">
                         <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
