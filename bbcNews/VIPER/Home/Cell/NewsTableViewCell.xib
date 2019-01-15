@@ -21,7 +21,7 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FJY-Ar-kKF" userLabel="container">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="120.5"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="genIcoClosePng" translatesAutoresizingMaskIntoConstraints="NO" id="I0e-JB-XuL">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="I0e-JB-XuL">
                                 <rect key="frame" x="8" y="16" width="120" height="88.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="2KR-8i-J4q"/>
@@ -80,7 +80,4 @@
             <point key="canvasLocation" x="137.59999999999999" y="166.8665667166417"/>
         </tableViewCell>
     </objects>
-    <resources>
-        <image name="genIcoClosePng" width="32" height="32"/>
-    </resources>
 </document>

@@ -11,13 +11,13 @@ import UIKit
 
 protocol HomeRouterProtocol: AnyObject {
     
-    func presentDetailView()
+    func goToWebView(dto: WebViewAuxAssemblyDTO)
 }
 
 final class HomeRouter: BaseRouter<HomePresenterProtocol, HomeView>, HomeRouterProtocol {
     
     // MARK: Internal functions declaration of all functions and protocol variables
-    internal func presentDetailView() {
-        
+    internal func goToWebView(dto: WebViewAuxAssemblyDTO) {
+        self.view?.navigationController?.pushViewController(WebViewAuxAssembly.webViewAuxPresenterView(webViewAuxAssemblyDTO: dto), animated: true)
     }
 }

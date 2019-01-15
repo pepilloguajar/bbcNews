@@ -21,7 +21,6 @@ class HomeView: BaseView<HomePresenterProtocol>, UITableViewDelegate, UITableVie
     // MARK: UIViewController Functions
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.customizeNavigationBar()
         
         self.tableView.delegate = self
         self.tableView.dataSource = self
@@ -31,9 +30,9 @@ class HomeView: BaseView<HomePresenterProtocol>, UITableViewDelegate, UITableVie
     // MARK: IBActions declaration of all the controls
     
     // MARK: Private Functions
-    
+
     // Configuramos la navigation bar
-    fileprivate func customizeNavigationBar() {
+    func customizeNavigationBar() {
         self.navigationBar.viewModel = BaseNavigationBarModel(title: "News BBC",
                                                               leftButton: .none,
                                                               rightButton: .search,
@@ -61,6 +60,12 @@ class HomeView: BaseView<HomePresenterProtocol>, UITableViewDelegate, UITableVie
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let _ = self.presenter?.newsModel[indexPath.row] else { return }
+        
+        self.presenter?.navigateToWebView(index: indexPath.row)
+    }
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 160
     }
@@ -71,11 +76,10 @@ extension HomeView: BaseViewControllerViewDidLoadProtocol {
     
     func i18N() {
         
-        self.title = "Home"
     }
     
     func initializeGUI() {
-
+        self.customizeNavigationBar()
     }
 }
 
@@ -101,8 +105,8 @@ extension HomeView: BaseNavigationBarDelegate {
     }
     
     func rightButtonAction() {
-        
+        // No se requiere funcionamiento
+        print("Funcionalidad en desarrollo.......")
     }
-    
     
 }

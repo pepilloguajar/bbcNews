@@ -46,7 +46,7 @@ class BBCNewsLoader: UIView {
                     return
                 }
                 // Bajamos la vista del loader por debajo de la barra de navegación
-                hudView.frame = fullScreen ? window.bounds : CGRect(x: 0.0, y: 44 + UIApplication.shared.statusBarFrame.height, width: window.bounds.width, height: window.bounds.height - (44 + UIApplication.shared.statusBarFrame.height))
+                hudView.frame = fullScreen ? window.bounds : CGRect(x: 0.0, y: 60 + UIApplication.shared.statusBarFrame.height, width: window.bounds.width, height: window.bounds.height - (60 + UIApplication.shared.statusBarFrame.height))
                 
                 // Modificamos el frame si estamos en la posición global de iPad debido a que la cabecera es más grande
                 if isGlobalPositionIpad {

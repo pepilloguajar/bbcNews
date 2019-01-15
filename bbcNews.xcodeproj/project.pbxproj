@@ -120,6 +120,20 @@
 		03FC7A7821ED1A7C00571910 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FC7A7521ED1A7C00571910 /* NewsTableViewCell.swift */; };
 		03FC7A7921ED1A7C00571910 /* NewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03FC7A7621ED1A7C00571910 /* NewsTableViewCell.xib */; };
 		03FC7A7A21ED1A7C00571910 /* NewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03FC7A7621ED1A7C00571910 /* NewsTableViewCell.xib */; };
+		03FC7A8A21EE472A00571910 /* WebViewAuxView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03FC7A8021EE472A00571910 /* WebViewAuxView.xib */; };
+		03FC7A8B21EE472A00571910 /* WebViewAuxView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03FC7A8021EE472A00571910 /* WebViewAuxView.xib */; };
+		03FC7A8C21EE472A00571910 /* WebViewAuxView_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03FC7A8121EE472A00571910 /* WebViewAuxView_iPad.xib */; };
+		03FC7A8D21EE472A00571910 /* WebViewAuxView_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03FC7A8121EE472A00571910 /* WebViewAuxView_iPad.xib */; };
+		03FC7A8E21EE472A00571910 /* WebViewAuxInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FC7A8221EE472A00571910 /* WebViewAuxInteractor.swift */; };
+		03FC7A8F21EE472A00571910 /* WebViewAuxInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FC7A8221EE472A00571910 /* WebViewAuxInteractor.swift */; };
+		03FC7A9021EE472A00571910 /* WebViewAuxAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FC7A8321EE472A00571910 /* WebViewAuxAssembly.swift */; };
+		03FC7A9121EE472A00571910 /* WebViewAuxAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FC7A8321EE472A00571910 /* WebViewAuxAssembly.swift */; };
+		03FC7A9221EE472A00571910 /* WebViewAuxRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FC7A8421EE472A00571910 /* WebViewAuxRouter.swift */; };
+		03FC7A9321EE472A00571910 /* WebViewAuxRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FC7A8421EE472A00571910 /* WebViewAuxRouter.swift */; };
+		03FC7A9421EE472A00571910 /* WebViewAuxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FC7A8521EE472A00571910 /* WebViewAuxView.swift */; };
+		03FC7A9521EE472A00571910 /* WebViewAuxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FC7A8521EE472A00571910 /* WebViewAuxView.swift */; };
+		03FC7A9A21EE472A00571910 /* WebViewAuxPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FC7A8921EE472A00571910 /* WebViewAuxPresenter.swift */; };
+		03FC7A9B21EE472A00571910 /* WebViewAuxPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FC7A8921EE472A00571910 /* WebViewAuxPresenter.swift */; };
 		F87AEDF018C7D73E2220E78D /* Pods_bbcNewsLOC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 398E40649059B501B590DCA5 /* Pods_bbcNewsLOC.framework */; };
 /* End PBXBuildFile section */
 
@@ -182,6 +196,13 @@
 		03FC7A6621ED04C900571910 /* BaseNavigationBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaseNavigationBar.xib; sourceTree = "<group>"; };
 		03FC7A7521ED1A7C00571910 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
 		03FC7A7621ED1A7C00571910 /* NewsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsTableViewCell.xib; sourceTree = "<group>"; };
+		03FC7A8021EE472A00571910 /* WebViewAuxView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebViewAuxView.xib; sourceTree = "<group>"; };
+		03FC7A8121EE472A00571910 /* WebViewAuxView_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebViewAuxView_iPad.xib; sourceTree = "<group>"; };
+		03FC7A8221EE472A00571910 /* WebViewAuxInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewAuxInteractor.swift; sourceTree = "<group>"; };
+		03FC7A8321EE472A00571910 /* WebViewAuxAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewAuxAssembly.swift; sourceTree = "<group>"; };
+		03FC7A8421EE472A00571910 /* WebViewAuxRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewAuxRouter.swift; sourceTree = "<group>"; };
+		03FC7A8521EE472A00571910 /* WebViewAuxView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewAuxView.swift; sourceTree = "<group>"; };
+		03FC7A8921EE472A00571910 /* WebViewAuxPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewAuxPresenter.swift; sourceTree = "<group>"; };
 		398E40649059B501B590DCA5 /* Pods_bbcNewsLOC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_bbcNewsLOC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		99596529534E8479B8F64D3A /* Pods-bbcNewsLOC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bbcNewsLOC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-bbcNewsLOC/Pods-bbcNewsLOC.debug.xcconfig"; sourceTree = "<group>"; };
 		D5CAC76EDF4B71CEAA2DEEF0 /* Pods-bbcNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bbcNews.debug.xcconfig"; path = "Pods/Target Support Files/Pods-bbcNews/Pods-bbcNews.debug.xcconfig"; sourceTree = "<group>"; };
@@ -284,6 +305,7 @@
 		03FC797E21EBB3A800571910 /* VIPER */ = {
 			isa = PBXGroup;
 			children = (
+				03FC7A7E21EE472A00571910 /* WebViewAux */,
 				03FC7A0921EBC0C600571910 /* Home */,
 				03FC797F21EBB3A800571910 /* Enums */,
 				03FC798121EBB3A800571910 /* Utils */,
@@ -417,6 +439,36 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		03FC7A7E21EE472A00571910 /* WebViewAux */ = {
+			isa = PBXGroup;
+			children = (
+				03FC7A8321EE472A00571910 /* WebViewAuxAssembly.swift */,
+				03FC7A8421EE472A00571910 /* WebViewAuxRouter.swift */,
+				03FC7A8221EE472A00571910 /* WebViewAuxInteractor.swift */,
+				03FC7A8921EE472A00571910 /* WebViewAuxPresenter.swift */,
+				03FC7A8521EE472A00571910 /* WebViewAuxView.swift */,
+				03FC7A7F21EE472A00571910 /* XIB */,
+				03FC7A8621EE472A00571910 /* Models */,
+			);
+			path = WebViewAux;
+			sourceTree = "<group>";
+		};
+		03FC7A7F21EE472A00571910 /* XIB */ = {
+			isa = PBXGroup;
+			children = (
+				03FC7A8021EE472A00571910 /* WebViewAuxView.xib */,
+				03FC7A8121EE472A00571910 /* WebViewAuxView_iPad.xib */,
+			);
+			path = XIB;
+			sourceTree = "<group>";
+		};
+		03FC7A8621EE472A00571910 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		6230304FB096F4FF704BE8AA /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -517,8 +569,10 @@
 				03FC7A7021ED04C900571910 /* BaseNavigationBar.xib in Resources */,
 				03FC79C721EBB3A900571910 /* bbcNewsLOC.plist in Resources */,
 				03FC799521EBB3A900571910 /* LaunchScreen.storyboard in Resources */,
+				03FC7A8A21EE472A00571910 /* WebViewAuxView.xib in Resources */,
 				03FC7A1821EBC0C600571910 /* HomeView_iPad.xib in Resources */,
 				03FC7A3121EBC35000571910 /* BBCNewsLoader.xib in Resources */,
+				03FC7A8C21EE472A00571910 /* WebViewAuxView_iPad.xib in Resources */,
 				03FC7A7921ED1A7C00571910 /* NewsTableViewCell.xib in Resources */,
 				03FC7A3821EBC7BB00571910 /* loader.json in Resources */,
 				03FC799321EBB3A900571910 /* Assets.xcassets in Resources */,
@@ -535,8 +589,10 @@
 				03FC7A7121ED04C900571910 /* BaseNavigationBar.xib in Resources */,
 				03FC79C821EBB3A900571910 /* bbcNewsLOC.plist in Resources */,
 				03FC799621EBB3A900571910 /* LaunchScreen.storyboard in Resources */,
+				03FC7A8B21EE472A00571910 /* WebViewAuxView.xib in Resources */,
 				03FC7A1921EBC0C600571910 /* HomeView_iPad.xib in Resources */,
 				03FC7A3221EBC35000571910 /* BBCNewsLoader.xib in Resources */,
+				03FC7A8D21EE472A00571910 /* WebViewAuxView_iPad.xib in Resources */,
 				03FC7A7A21ED1A7C00571910 /* NewsTableViewCell.xib in Resources */,
 				03FC7A3921EBC7BB00571910 /* loader.json in Resources */,
 				03FC799421EBB3A900571910 /* Assets.xcassets in Resources */,
@@ -660,7 +716,9 @@
 				03FC7A5621ECF2AB00571910 /* Item.swift in Sources */,
 				03FC79B321EBB3A900571910 /* bbcNewsEnums.swift in Sources */,
 				03FC7A5C21ECF2E000571910 /* Image.swift in Sources */,
+				03FC7A9421EE472A00571910 /* WebViewAuxView.swift in Sources */,
 				03FC79B521EBB3A900571910 /* bbcNewsUtils.swift in Sources */,
+				03FC7A9021EE472A00571910 /* WebViewAuxAssembly.swift in Sources */,
 				03FC799F21EBB3A900571910 /* Date+Extension.swift in Sources */,
 				03FC79A921EBB3A900571910 /* Bundle+Extension.swift in Sources */,
 				03FC7A5F21ECF2FB00571910 /* Channel.swift in Sources */,
@@ -672,13 +730,16 @@
 				03FC7A5321ECF27D00571910 /* Thumbnail.swift in Sources */,
 				03FC7A5021ECF1B600571910 /* ChannelEntity.swift in Sources */,
 				03FC7A4D21EBCDDF00571910 /* ThumbnailEntity.swift in Sources */,
+				03FC7A9221EE472A00571910 /* WebViewAuxRouter.swift in Sources */,
 				03FC7A3B21EBCCD600571910 /* NewsResponseEntity.swift in Sources */,
+				03FC7A8E21EE472A00571910 /* WebViewAuxInteractor.swift in Sources */,
 				03FC79B721EBB3A900571910 /* BaseViewController.swift in Sources */,
 				03FC7A4721EBCD8300571910 /* ItemEntity.swift in Sources */,
 				03FC79C121EBB3A900571910 /* BaseView.swift in Sources */,
 				03FC79BB21EBB3A900571910 /* BaseAssembly.swift in Sources */,
 				03FC79B121EBB3A900571910 /* UINavigationBar+Extension.swift in Sources */,
 				03FC79A521EBB3A900571910 /* UIImage+Extension.swift in Sources */,
+				03FC7A9A21EE472A00571910 /* WebViewAuxPresenter.swift in Sources */,
 				03FC7A2B21EBC2AB00571910 /* BaseProvider.swift in Sources */,
 				03FC79AF21EBB3A900571910 /* String+Extension.swift in Sources */,
 				03FC7A2621EBC0C600571910 /* HomeRouter.swift in Sources */,
@@ -710,7 +771,9 @@
 				03FC7A5721ECF2AB00571910 /* Item.swift in Sources */,
 				03FC79B421EBB3A900571910 /* bbcNewsEnums.swift in Sources */,
 				03FC7A5D21ECF2E000571910 /* Image.swift in Sources */,
+				03FC7A9521EE472A00571910 /* WebViewAuxView.swift in Sources */,
 				03FC79B621EBB3A900571910 /* bbcNewsUtils.swift in Sources */,
+				03FC7A9121EE472A00571910 /* WebViewAuxAssembly.swift in Sources */,
 				03FC79A021EBB3A900571910 /* Date+Extension.swift in Sources */,
 				03FC79AA21EBB3A900571910 /* Bundle+Extension.swift in Sources */,
 				03FC7A6021ECF2FB00571910 /* Channel.swift in Sources */,
@@ -722,13 +785,16 @@
 				03FC7A5421ECF27D00571910 /* Thumbnail.swift in Sources */,
 				03FC7A5121ECF1B600571910 /* ChannelEntity.swift in Sources */,
 				03FC7A4E21EBCDDF00571910 /* ThumbnailEntity.swift in Sources */,
+				03FC7A9321EE472A00571910 /* WebViewAuxRouter.swift in Sources */,
 				03FC7A3C21EBCCD600571910 /* NewsResponseEntity.swift in Sources */,
+				03FC7A8F21EE472A00571910 /* WebViewAuxInteractor.swift in Sources */,
 				03FC79B821EBB3A900571910 /* BaseViewController.swift in Sources */,
 				03FC7A4821EBCD8300571910 /* ItemEntity.swift in Sources */,
 				03FC79C221EBB3A900571910 /* BaseView.swift in Sources */,
 				03FC79BC21EBB3A900571910 /* BaseAssembly.swift in Sources */,
 				03FC79B221EBB3A900571910 /* UINavigationBar+Extension.swift in Sources */,
 				03FC79A621EBB3A900571910 /* UIImage+Extension.swift in Sources */,
+				03FC7A9B21EE472A00571910 /* WebViewAuxPresenter.swift in Sources */,
 				03FC7A2C21EBC2AB00571910 /* BaseProvider.swift in Sources */,
 				03FC79B021EBB3A900571910 /* String+Extension.swift in Sources */,
 				03FC7A2721EBC0C600571910 /* HomeRouter.swift in Sources */,

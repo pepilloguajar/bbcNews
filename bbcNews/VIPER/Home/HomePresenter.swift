@@ -14,6 +14,7 @@ protocol HomePresenterProtocol: AnyObject {
     var homeAssemblyDTO: HomeAssemblyDTO? { get set }
     func getNewsData()
     var newsModel: [Item] { get set }
+    func navigateToWebView(index: Int)
 }
 
 final class HomePresenter: BasePresenter<HomeView, HomeRouterProtocol, HomeInteractorProtocol>, HomePresenterProtocol {
@@ -25,6 +26,11 @@ final class HomePresenter: BasePresenter<HomeView, HomeRouterProtocol, HomeInter
     internal func getNewsData() {
         self.getNewsDataAction()
     }
+    
+    internal func navigateToWebView(index: Int) {
+        self.navigateToWebViewAction(index: index)
+    }
+
     
     // MARK: Fileprivate functions declaration of all functions that return something to the protocol or perform an activity that should not be exposed
     fileprivate func getNewsDataAction() {
@@ -49,5 +55,13 @@ final class HomePresenter: BasePresenter<HomeView, HomeRouterProtocol, HomeInter
         // Refrescamos la tabla con el contenido de noticias
         self.view?.tableView.reloadData()
         
+    }
+    
+    fileprivate func navigateToWebViewAction(index: Int) {
+        guard let urlString = self.newsModel[index].link else { return }
+        let title = self.newsModel[index].title ?? "News Item"
+        
+        let dto = WebViewAuxAssemblyDTO(urlLoad: urlString, newsTitle: title)
+        self.router?.goToWebView(dto: dto)
     }
 }

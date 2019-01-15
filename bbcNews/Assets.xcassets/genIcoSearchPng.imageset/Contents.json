@@ -2,17 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "genIcoSearchPng.png",
+      "filename" : "icoSearch.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "genIcoSearchPng@2x.png",
+      "filename" : "icoSearch@2x.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "genIcoSearchPng@3x.png",
+      "filename" : "icoSearch@3x.png",
       "scale" : "3x"
     }
   ],

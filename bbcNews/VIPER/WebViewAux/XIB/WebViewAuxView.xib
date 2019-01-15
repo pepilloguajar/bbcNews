@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WebViewAuxView">
+            <connections>
+                <outlet property="navigationBar" destination="6xn-cG-lpF" id="9jJ-Zk-5YL"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="x4H-ry-a8n"/>
+                <outlet property="webView" destination="urz-PF-erm" id="r2D-0b-XOt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6xn-cG-lpF" customClass="BaseNavigationBar" customModule="bbcNews" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="44" width="375" height="60"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="zJG-16-evf"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="XBZ-MF-xMc"/>
+                </view>
+                <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="urz-PF-erm">
+                    <rect key="frame" x="0.0" y="104" width="375" height="708"/>
+                    <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <wkWebViewConfiguration key="configuration">
+                        <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                        <wkPreferences key="preferences"/>
+                    </wkWebViewConfiguration>
+                </wkWebView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="urz-PF-erm" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="CBq-g1-kud"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="urz-PF-erm" secondAttribute="trailing" id="EL5-oq-Ch6"/>
+                <constraint firstItem="urz-PF-erm" firstAttribute="top" secondItem="6xn-cG-lpF" secondAttribute="bottom" id="P0E-aS-09j"/>
+                <constraint firstItem="6xn-cG-lpF" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="kjY-DW-AaX"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="top" secondItem="6xn-cG-lpF" secondAttribute="top" id="pMO-w9-9of"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="6xn-cG-lpF" secondAttribute="trailing" id="wP7-VD-35l"/>
+                <constraint firstAttribute="bottom" secondItem="urz-PF-erm" secondAttribute="bottom" id="xG7-VR-rTb"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>

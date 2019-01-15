@@ -5,7 +5,7 @@
 import UIKit
 
 enum LeftButtonType {
-    case close
+    case back
     case none
 }
 
@@ -69,14 +69,17 @@ class BaseNavigationBar: UIView {
     
     internal func configure() {
         
+        self.leftButton.imageView?.contentMode = .scaleAspectFit
+        self.rightButton.imageView?.contentMode = .scaleAspectFit
+        
         titleLabel.text = viewModel.title
         
         switch viewModel.leftButton {
 
-        case .close:
+        case .back:
             
             leftButton.isHidden = false
-            leftButton.setImage(UIImage(named: "genIcoClosePng"), for: .normal)
+            leftButton.setImage(UIImage(named: "genIcoBackPng"), for: .normal)
             
         default:
             
