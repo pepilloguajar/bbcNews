@@ -17,6 +17,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BaseNavigationBar" customModule="bbcNews" customModuleProvider="target">
             <connections>
                 <outlet property="leftButton" destination="SWP-0b-o3y" id="Jhw-ja-ye4"/>
+                <outlet property="logoImage" destination="rw9-TK-eug" id="gEm-ZU-WzJ"/>
                 <outlet property="rightButton" destination="2VH-jW-hau" id="wM6-e4-ZB2"/>
                 <outlet property="titleLabel" destination="4QL-EG-Fc7" id="pyq-hx-3Ju"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="hkw-oH-gjP"/>
@@ -48,32 +49,26 @@
                             <rect key="frame" x="56" y="0.0" width="263" height="64"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4QL-EG-Fc7">
-                                    <rect key="frame" x="0.0" y="22" width="263" height="20"/>
+                                    <rect key="frame" x="0.0" y="32" width="263" height="0.0"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="17"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <view contentMode="scaleToFill" horizontalHuggingPriority="1000" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="syV-ft-WAN" userLabel="viewSubtitle">
-                                    <rect key="frame" x="0.0" y="46" width="263" height="14"/>
-                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                    <constraints>
-                                        <constraint firstAttribute="height" constant="14" placeholder="YES" id="8Yt-TR-Fdl"/>
-                                        <constraint firstAttribute="width" constant="263" placeholder="YES" id="WCW-Vx-Qcd"/>
-                                    </constraints>
-                                </view>
+                                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rw9-TK-eug">
+                                    <rect key="frame" x="16" y="8" width="231" height="48"/>
+                                </imageView>
                             </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             <constraints>
-                                <constraint firstItem="syV-ft-WAN" firstAttribute="centerX" secondItem="RJD-V1-Pka" secondAttribute="centerX" id="4hD-y1-7xX"/>
                                 <constraint firstItem="4QL-EG-Fc7" firstAttribute="centerX" secondItem="RJD-V1-Pka" secondAttribute="centerX" id="9D5-az-PKc"/>
                                 <constraint firstItem="4QL-EG-Fc7" firstAttribute="centerY" secondItem="RJD-V1-Pka" secondAttribute="centerY" id="CxG-QU-BCn"/>
                                 <constraint firstAttribute="trailing" secondItem="4QL-EG-Fc7" secondAttribute="trailing" id="NU5-pv-fle"/>
-                                <constraint firstItem="syV-ft-WAN" firstAttribute="top" secondItem="4QL-EG-Fc7" secondAttribute="bottom" constant="4" id="QV9-n4-eva"/>
-                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="syV-ft-WAN" secondAttribute="trailing" id="R8p-vd-oAe"/>
                                 <constraint firstItem="4QL-EG-Fc7" firstAttribute="leading" secondItem="RJD-V1-Pka" secondAttribute="leading" id="TIz-nY-c3W"/>
-                                <constraint firstAttribute="bottom" secondItem="syV-ft-WAN" secondAttribute="bottom" constant="4" id="qkU-by-RBW"/>
-                                <constraint firstItem="syV-ft-WAN" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="RJD-V1-Pka" secondAttribute="leading" id="vPb-Dy-Eau"/>
+                                <constraint firstItem="rw9-TK-eug" firstAttribute="top" secondItem="RJD-V1-Pka" secondAttribute="top" constant="8" id="adG-ym-2t7"/>
+                                <constraint firstItem="rw9-TK-eug" firstAttribute="leading" secondItem="RJD-V1-Pka" secondAttribute="leading" constant="16" id="hkj-zQ-Jj3"/>
+                                <constraint firstAttribute="bottom" secondItem="rw9-TK-eug" secondAttribute="bottom" constant="8" id="lIw-5x-fp1"/>
+                                <constraint firstAttribute="trailing" secondItem="rw9-TK-eug" secondAttribute="trailing" constant="16" id="rnd-gG-daH"/>
                             </constraints>
                         </view>
                         <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2VH-jW-hau" userLabel="Right Button">

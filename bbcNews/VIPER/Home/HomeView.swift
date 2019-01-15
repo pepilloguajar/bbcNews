@@ -33,10 +33,11 @@ class HomeView: BaseView<HomePresenterProtocol>, UITableViewDelegate, UITableVie
 
     // Configuramos la navigation bar
     func customizeNavigationBar() {
-        self.navigationBar.viewModel = BaseNavigationBarModel(title: "News BBC",
+        self.navigationBar.viewModel = BaseNavigationBarModel(title: "",
                                                               leftButton: .none,
                                                               rightButton: .search,
-                                                              showViewBottomLine: true)
+                                                              showViewBottomLine: true,
+                                                              showLogoImage: true)
         
         self.navigationBar.delegate = self
         self.navigationBar.setWhiteStyle()

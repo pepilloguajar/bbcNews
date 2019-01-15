@@ -35,6 +35,7 @@ class BaseNavigationBar: UIView {
     @IBOutlet weak var viewBackgroundEnvironement: UIView!
     @IBOutlet weak var viewLineSeparator: UIView!
     @IBOutlet var viewContentLabelTitle: UIView!
+    @IBOutlet weak var logoImage: UIImageView!
     
     fileprivate var generalView: UIView!
     
@@ -72,7 +73,16 @@ class BaseNavigationBar: UIView {
         self.leftButton.imageView?.contentMode = .scaleAspectFit
         self.rightButton.imageView?.contentMode = .scaleAspectFit
         
-        titleLabel.text = viewModel.title
+        if !self.viewModel.showLogoImage {
+            self.logoImage.isHidden = true
+            self.titleLabel.isHidden = false
+            titleLabel.text = viewModel.title
+        } else {
+            self.logoImage.isHidden = false
+            self.titleLabel.isHidden = true
+            self.logoImage.image = #imageLiteral(resourceName: "logoBBC")
+        }
+    
         
         switch viewModel.leftButton {
 
@@ -162,15 +172,18 @@ struct BaseNavigationBarModel {
     var leftButton: LeftButtonType
     var rightButton: RightButtonType
     var showViewBottomLine: Bool
+    var showLogoImage: Bool
     
     init(title: String,
          leftButton: LeftButtonType,
          rightButton: RightButtonType,
-         showViewBottomLine: Bool = true) {
+         showViewBottomLine: Bool = true,
+         showLogoImage: Bool = false) {
         
         self.title = title
         self.leftButton = leftButton
         self.rightButton = rightButton
         self.showViewBottomLine = showViewBottomLine
+        self.showLogoImage = showLogoImage
     }
 }
